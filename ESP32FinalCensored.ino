@@ -3,8 +3,8 @@
 #include <WiFiClientSecure.h>
 
 #pragma region Globals
-const char* ssid = "EKONKAR-Guest";                           
-const char* password = "abcabcabcd";                       
+const char* ssid = "*********";                           
+const char* password = "*********";                       
 uint8_t connection_state = 0;                    
 uint16_t reconnect_interval = 10000;             
 #pragma endregion Globals
@@ -62,7 +62,7 @@ void email_send() {
   }
   Gsender *gsender = Gsender::Instance();    
   String subject = "HI REFEREE!";
-  if (gsender->Subject(subject)->Send("5105131438@vtext.com", "GOAL SCORED - GLT SYSTEM"))
+  if (gsender->Subject(subject)->Send("**********@vtext.com", "GOAL SCORED - GLT SYSTEM"))
   {
     Serial.println("Message sent.");
   }
